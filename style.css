@@ -9,27 +9,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .grid-container {
-    width: 592px;
-    height: 592px;
+    width: 540px;
+    height: 540px;
     padding: 0px;
+    margin-top: 20px;
     display: flex;
     flex-shrink: 1;
     flex-wrap: wrap;
     border: 1px solid black;
+    flex-direction: column;
+}
+
+.grid-row {
+    display: flex;
+    flex: 1 1 0;
+    width: 100%;
 }
 
 .grid-square {
-    height: 35px;
-    width: 35px;
+    width: 20px;
     border: 1px solid black;
     margin: 0px;
     padding: 0px;
-    flex-shrink: 1;
+    flex: 1 1 0;
 }
 
 .mouseover-square {
     background-color: black;
+}
+
+.new-grid-btn {
+    padding: 5px 10px;
 }
