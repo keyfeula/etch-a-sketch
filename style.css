@@ -29,3 +29,7 @@ body {
     padding: 0px;
     flex-shrink: 1;
 }
+
+.mouseover-square {
+    background-color: black;
+}

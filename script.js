@@ -8,3 +8,12 @@ for (let i = 0; i < 256; i++) {
     gridSquares.push(gridSquare);
     gridContainer.appendChild(gridSquare);
 }
+
+function mouseoverHandler(event) {
+    let targetElement = event.target;
+    if (targetElement.classList.contains("grid-square")) {
+        targetElement.classList.add("mouseover-square");
+    }
+}
+
+gridContainer.addEventListener("mouseover", mouseoverHandler);
