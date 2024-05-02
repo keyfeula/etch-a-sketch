@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: solid red 2px;
 }
 
 body {
@@ -13,6 +12,20 @@ body {
 }
 
 .grid-container {
-    width: 500px;
-    height: 500px;
+    width: 592px;
+    height: 592px;
+    padding: 0px;
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.grid-square {
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    flex-shrink: 1;
 }
