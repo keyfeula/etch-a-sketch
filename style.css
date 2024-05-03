@@ -41,6 +41,8 @@ body {
     background-color: black;
 }
 
-.new-grid-btn {
+button {
     padding: 5px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
