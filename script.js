@@ -1,5 +1,5 @@
 const gridContainer = document.querySelector(".grid-container");
-const gridSquares = [];
+const newGridBtn = document.querySelector(".new-grid-btn");
 
 function createGrid(sideLength) {
     for (let i = 0; i < sideLength; i++) {
@@ -25,6 +25,19 @@ function mouseoverHandler(event) {
     }
 }
 
+function newGridHandler(event) {
+    let gridSize = prompt("Enter new grid size less than 100: ");
+    gridSize = Number(gridSize);
+    gridContainer.innerHTML = "";
+    if (typeof gridSize === "number" && gridSize <= 100) {
+        createGrid(gridSize);
+    }
+    else {
+        createGrid(20);
+    }
+}
+
 gridContainer.addEventListener("mouseover", mouseoverHandler);
+newGridBtn.addEventListener("click", newGridHandler);
 
 createGrid(20);
